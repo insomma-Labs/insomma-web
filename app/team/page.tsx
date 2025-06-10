@@ -18,11 +18,11 @@ export default function TeamPage() {
         >
           <div className="w-full h-full grid place-content-center bg-gradient-to-t from-blue-700 to-blue-800/50">
             <div className="max-w-3xl text-center space-y-6">
-              <h2 className="text-5xl text-background text-balance font-bold tracking-tighter">
+              <h2 className="text-[10vw] xs:text-5xl text-background text-balance font-bold tracking-tighter">
                 Meet Our Team
               </h2>
 
-              <p className="text-zinc-200 text-balance">
+              <p className="text-zinc-200 text-balance text-sm xs:text-base">
                 We are a team of professionals passionate about technology and
                 cloud infrastructure. Our mission is to deliver high
                 performance, reliable and secure solutions to help our customers
@@ -59,7 +59,7 @@ export default function TeamPage() {
               alt="Alex Jones"
               className="size-32 rounded-full mx-auto mb-4 object-cover border border-blue-600 p-0.5"
             />
-            <h3 className="text-xl font-semibold">Talismike</h3>
+            <h3 className="text-xl font-semibold">Mike</h3>
             <p className="text-muted-foreground">Chief Executive Officer</p>
           </div>
 

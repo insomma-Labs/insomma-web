@@ -81,11 +81,11 @@ export default function VdsPage() {
         >
           <div className="w-full h-full grid place-content-center bg-gradient-to-t from-blue-700 to-blue-800/50">
             <div className="max-w-3xl text-center space-y-6">
-              <h2 className="text-5xl text-background text-balance font-bold tracking-tighter">
+              <h2 className="text-[8vw] text-center xs:text-5xl text-background text-balance font-bold tracking-tighter">
                 High-performance VDS with dedicated resources
               </h2>
 
-              <p className="text-zinc-200 text-balance">
+              <p className="text-zinc-200 text-balance text-sm xs:text-base">
                 Dedicated virtual server with reserved power, perfect for
                 running critical services running critical services, web
                 servers, multiplayer game servers multiplayer game servers, or

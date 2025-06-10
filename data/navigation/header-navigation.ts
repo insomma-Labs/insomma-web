@@ -70,7 +70,7 @@ export const navigationItems: NavItem[] = [
       },
       {
         label: "Instagram",
-        icon: "https://svgl.app/library/instagram.svg",
+        icon: "https://imgs.search.brave.com/nM9dtTWh5MJITWjadxAT5P6iD-359PV3LdSxwboTMO0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy90/aHVtYi85Lzk1L0lu/c3RhZ3JhbV9sb2dv/XzIwMjIuc3ZnLzk2/MHB4LUluc3RhZ3Jh/bV9sb2dvXzIwMjIu/c3ZnLnBuZw",
         href: "https://www.instagram.com/insomma.cloud",
       },
     ],
