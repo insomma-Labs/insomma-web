@@ -33,7 +33,7 @@ export default function Header() {
       <header className="border-b sticky top-0 left-0 z-50">
         <div className="hidden h-8 bg-[#1433d6] font-inter-sans xxs:flex justify-between items-center px-4 md:px-8 xl:px-40">
           <h4 className="text-sm text-primary-foreground font-medium hover:underline">
-            🚀 Visita nuestro discord y unete a la comunidad.
+            🚀 Visit our discord and join the community.
           </h4>
 
           <ul className="hidden md:flex items-center gap-4">
@@ -48,7 +48,7 @@ export default function Header() {
               target="_blank"
               className="text-primary-foreground font-medium text-sm hover:underline"
             >
-              Soporte
+              Support
             </Link>
             <Link
               href="https://discord.gg/BwBjEEDzrR"
@@ -142,7 +142,7 @@ export default function Header() {
               >
                 <Link href="https://discord.gg/BwBjEEDzrR">
                   <ShoppingCart className="text-4 mr-1.5" />
-                  Tienda
+                  Store
                 </Link>
               </Button>
             </div>
@@ -201,7 +201,7 @@ export default function Header() {
                 >
                   <Link href="/contact">
                     <ShoppingCart />
-                    Tienda
+                    Store
                   </Link>
                 </Button>
               </div>

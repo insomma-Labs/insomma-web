@@ -1,15 +1,15 @@
 export const locations = {
   europe: [
-    { name: "Union Europea", flag: "🇪🇺" },
-    { name: "Reino Unido", flag: "🇬🇧" },
+    { name: "European Union", flag: "🇪🇺" },
+    { name: "United Kingdom", flag: "🇬🇧" },
   ],
   usa: [
-    { name: "Estados unidos (centro)", flag: "🇺🇸" },
-    { name: "Estados unidos (este)", flag: "🇺🇸" },
-    { name: "Estados unidos (oeste)", flag: "🇺🇸" },
+    { name: "United States (Central)", flag: "🇺🇸" },
+    { name: "United States (East)", flag: "🇺🇸" },
+    { name: "United States (West)", flag: "🇺🇸" },
   ],
   asia: [
-    { name: "Japon", flag: "🇯🇵" },
+    { name: "Japan", flag: "🇯🇵" },
     { name: "Singapore", flag: "🇸🇬" },
     { name: "India", flag: "🇮🇳" },
   ],

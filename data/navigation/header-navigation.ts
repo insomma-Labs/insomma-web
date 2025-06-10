@@ -18,7 +18,7 @@ export const navigationItems: NavItem[] = [
     href: "/",
   },
   {
-    label: "Nosotros",
+    label: "Team",
     href: "/team",
   },
   {
@@ -27,15 +27,14 @@ export const navigationItems: NavItem[] = [
     dropdown: [
       {
         label: "Cloud VPS",
-        description:
-          "Servidores virtuales privados con NVMe rápido, desde €11.38",
+        description: "Virtual private servers with fast NVMe, from €7.97",
         icon: "https://cdn-icons-png.flaticon.com/512/4663/4663391.png",
         href: "/vps",
       },
       {
         label: "Windows VPS",
         description:
-          "Entornos Windows optimizados para software (proximamente)",
+          "Windows environments optimized for software (coming soon)",
         icon: "https://cdn-icons-png.flaticon.com/512/25/25412.png",
         href: "/windows-vps",
       },
@@ -46,16 +45,16 @@ export const navigationItems: NavItem[] = [
     wide: true,
     dropdown: [
       {
-        label: "Servidor dedicado",
+        label: "Dedicated Servers",
         description:
-          "Potencia bruta. Hardware Bare Metal con recursos 100% dedicados. (proximamente)",
+          "Raw power. Bare Metal hardware with 100% dedicated resources (coming soon)",
         icon: "https://cdn-icons-png.flaticon.com/512/6595/6595988.png",
         href: "/dedicated-servers",
       },
       {
         label: "Cloud VDS",
         description:
-          "Servidores Dedicados Virtuales con aislamiento completo, desde €62.16",
+          "Virtual Dedicated Servers with full isolation, from €59.05",
         icon: "https://cdn-icons-png.flaticon.com/128/9292/9292589.png",
         href: "/vds",
       },

@@ -3,16 +3,16 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="border-t font-medium font-inter-sans py-8 px-4 md:px-8 xl:px-40">
-      <div className="flex justify-between items-center">
+      <div className="flex flex-col gap-4 text-center md:flex-row md:text-start justify-between items-center">
         <p className="text-sm text-muted-foreground">
-          Copyright © 2025 <span className="text-primary">Insomma Cloud</span>
-          {""} all right reserved.{" "}
+          Copyright © 2025 <span className="text-primary">Insomma Cloud</span>{" "}
+          all rights reserved.{" "}
           <Link href="/privacy-policy" className="underline text-primary">
-            Politica de privacidad
+            Privacy Policy
           </Link>
           {" - "}
           <Link href="/terms-and-conditions" className="underline text-primary">
-            Terminos y condiciones
+            Terms and Conditions
           </Link>
         </p>
 

@@ -31,6 +31,7 @@ import {
 } from "@/components/ui/tooltip";
 import { toast } from "sonner";
 import { vpsPlans } from "@/data/vps/vps-plans";
+import { Container } from "@/components/ui/container";
 
 export default function VpsPage() {
   const getPopularPlan = () => {
@@ -40,14 +41,14 @@ export default function VpsPage() {
   const copySpecifications = (plan: any) => {
     const specs = `
   Plan: ${plan.name}
-  Precio: ${plan.newPrice}
-  CPU: ${plan.vCpuCores} Núcleos virtuales
+  Price: €${plan.newPrice}
+  CPU: ${plan.vCpuCores} Virtual cores
   RAM: ${plan.ram}
-  Almacenamiento: ${plan.storage}
+  Storage: ${plan.storage}
   Snapshots: ${plan.snapshots}
-  Protección: ${plan.ddos} Incluida
-  Tráfico: ${plan.traffic}
-  Soporte: 24/7
+  Protection: ${plan.ddos} Included
+  Traffic: ${plan.traffic}
+  Support: 24/7
 `;
 
     navigator.clipboard
@@ -81,13 +82,13 @@ export default function VpsPage() {
           <div className="w-full h-full grid place-content-center bg-gradient-to-t from-blue-700 to-blue-800/50">
             <div className="max-w-3xl text-center space-y-6">
               <h2 className="text-5xl text-background text-balance font-bold tracking-tighter">
-                VPS de Alto Rendimiento
+                High-performance VPS with maximum stability
               </h2>
 
               <p className="text-zinc-200 text-balance">
-                Servidor virtual dedicado con potencia reservada, perfecto para
-                ejecutar servicios críticos, servidores web, servidores de
-                juegos multiplayer, o plataformas de alta exigencia.
+                Dedicated virtual server with reserved power, perfect for
+                running critical services, web servers, multiplayer game
+                servers, or highly demanding platforms.
               </p>
 
               <Link
@@ -101,14 +102,12 @@ export default function VpsPage() {
         </div>
       </main>
 
-      <section className="py-24 px-4 md:px-8 xl:px-40">
+      <Container className="py-24">
         <div className="mb-12 tracking-tighter">
-          <h1 className="text-4xl font-bold mb-4">
-            Elige el plan que necesites
-          </h1>
+          <h2 className="text-4xl font-bold mb-1">Choose the plan you need </h2>
           <p className="text-lg text-muted-foreground">
-            Nuestro equipo de ventas puede ayudarle a encontrar la solución que
-            mejor se adapte a sus necesidades.
+            Our sales team can help you find the solution that best suits your
+            needs. best suits your needs.
           </p>
         </div>
 
@@ -148,7 +147,7 @@ export default function VpsPage() {
                     </div>
                   </TooltipTrigger>
                   <TooltipContent>
-                    <p>Copiar especificaciones</p>
+                    <p>Copy specifications</p>
                   </TooltipContent>
                 </Tooltip>
               </TooltipProvider>
@@ -165,7 +164,7 @@ export default function VpsPage() {
                     <span className="text-4xl font-bold text-primary">
                       €{plan.newPrice}
                     </span>
-                    <span className="text-muted-foreground">/mes</span>
+                    <span className="text-muted-foreground">/month</span>
                   </div>
                 </CardDescription>
               </CardHeader>
@@ -176,7 +175,7 @@ export default function VpsPage() {
                   <div>
                     <span className="font-semibold">{plan.vCpuCores} vCPU</span>
                     <p className="text-sm text-muted-foreground">
-                      Núcleos virtuales
+                      Virtual cores
                     </p>
                   </div>
                 </div>
@@ -185,7 +184,7 @@ export default function VpsPage() {
                   <MemoryStick className="size-5 text-blue-500" />
                   <div>
                     <span className="font-semibold">{plan.ram} RAM</span>
-                    <p className="text-sm text-muted-foreground">Memoria</p>
+                    <p className="text-sm text-muted-foreground">Memory DDR4</p>
                   </div>
                 </div>
 
@@ -194,7 +193,7 @@ export default function VpsPage() {
                   <div>
                     <span className="font-semibold">{plan.storage}</span>
                     <p className="text-sm text-muted-foreground">
-                      Almacenamiento
+                      Storage NVMe or SSD
                     </p>
                   </div>
                 </div>
@@ -206,7 +205,7 @@ export default function VpsPage() {
                       {plan.snapshots} Snapshot{plan.snapshots > 1 ? "s" : ""}
                     </span>
                     <p className="text-sm text-muted-foreground">
-                      Copias de seguridad
+                      Backup copies
                     </p>
                   </div>
                 </div>
@@ -216,7 +215,7 @@ export default function VpsPage() {
                   <div>
                     <span className="font-semibold">{plan.ddos}</span>
                     <p className="text-sm text-muted-foreground">
-                      Protección incluida
+                      Protection included
                     </p>
                   </div>
                 </div>
@@ -225,15 +224,15 @@ export default function VpsPage() {
                   <Globe className="size-5 text-blue-500" />
                   <div>
                     <span className="font-semibold">{plan.traffic}</span>
-                    <p className="text-sm text-muted-foreground">Tráfico</p>
+                    <p className="text-sm text-muted-foreground">Traffic</p>
                   </div>
                 </div>
 
                 <div className="flex items-center gap-3">
                   <Clock className="size-5 text-blue-500" />
                   <div>
-                    <span className="font-semibold">Soporte</span>
-                    <p className="text-sm text-muted-foreground">Rapido 24/7</p>
+                    <span className="font-semibold">Support</span>
+                    <p className="text-sm text-muted-foreground">Fast 24/7</p>
                   </div>
                 </div>
               </CardContent>
@@ -251,14 +250,14 @@ export default function VpsPage() {
                 >
                   <Link href="https://discord.gg/BwBjEEDzrR" target="_blank">
                     <Server className="mr-2 h-4 w-4" />
-                    Contratar Plan
+                    Order now
                   </Link>
                 </Button>
               </CardFooter>
             </Card>
           ))}
         </div>
-      </section>
+      </Container>
     </>
   );
 }

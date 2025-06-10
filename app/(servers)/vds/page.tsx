@@ -40,15 +40,15 @@ export default function VdsPage() {
   const copySpecifications = (plan: any) => {
     const specs = `
   Plan: ${plan.name}
-  Precio: ${plan.newPrice}
-  CPU: ${plan.CpuCores} Núcleos fisicos
+  Price: €${plan.newPrice}
+  CPU: ${plan.CpuCores} Physical cores
   RAM: ${plan.ram}
-  Almacenamiento: ${plan.storage}
+  Storage: ${plan.storage}
   Snapshots: ${plan.snapshots}
-  Protección: ${plan.ddos} Incluida
-  Tráfico: ${plan.traffic}
-  Puerto: ${plan.port} Velocidad de transferencia
-  Soporte: 24/7
+  Protection: ${plan.ddos} Included
+  Traffic: ${plan.traffic}
+  Port: ${plan.port} Transfer speed
+  Support: 24/7
 `;
 
     navigator.clipboard
@@ -82,13 +82,14 @@ export default function VdsPage() {
           <div className="w-full h-full grid place-content-center bg-gradient-to-t from-blue-700 to-blue-800/50">
             <div className="max-w-3xl text-center space-y-6">
               <h2 className="text-5xl text-background text-balance font-bold tracking-tighter">
-                VPS de Alto Rendimiento
+                High-performance VDS with dedicated resources
               </h2>
 
               <p className="text-zinc-200 text-balance">
-                Servidor virtual dedicado con potencia reservada, perfecto para
-                ejecutar servicios críticos, servidores web, servidores de
-                juegos multiplayer, o plataformas de alta exigencia.
+                Dedicated virtual server with reserved power, perfect for
+                running critical services running critical services, web
+                servers, multiplayer game servers multiplayer game servers, or
+                high-demanding platforms.
               </p>
 
               <Link
@@ -104,13 +105,10 @@ export default function VdsPage() {
 
       <section className="py-24 px-4 md:px-8 xl:px-40">
         <div className="mb-12 tracking-tighter">
-          <h1 className="text-4xl font-bold mb-4">
-            Elige el plan que necesites
-          </h1>
-
+          <h2 className="text-4xl font-bold mb-1">Choose the plan you need </h2>
           <p className="text-lg text-muted-foreground">
-            Nuestro equipo de ventas puede ayudarle a encontrar la solución que
-            mejor se adapte a sus necesidades.
+            Our sales team can help you find the solution that best suits your
+            needs. best suits your needs.
           </p>
         </div>
 
@@ -150,7 +148,7 @@ export default function VdsPage() {
                     </div>
                   </TooltipTrigger>
                   <TooltipContent>
-                    <p>Copiar especificaciones</p>
+                    <p>Copy specifications</p>
                   </TooltipContent>
                 </Tooltip>
               </TooltipProvider>
@@ -167,7 +165,7 @@ export default function VdsPage() {
                     <span className="text-4xl font-bold text-primary">
                       €{plan.newPrice}
                     </span>
-                    <span className="text-muted-foreground">/mes</span>
+                    <span className="text-muted-foreground">/month</span>
                   </div>
                 </CardDescription>
               </CardHeader>
@@ -178,7 +176,7 @@ export default function VdsPage() {
                   <div>
                     <span className="font-semibold">{plan.CpuCores} CPU</span>
                     <p className="text-sm text-muted-foreground">
-                      Núcleos fisicos
+                      Physical cores
                     </p>
                   </div>
                 </div>
@@ -187,7 +185,7 @@ export default function VdsPage() {
                   <MemoryStick className="size-5 text-blue-500" />
                   <div>
                     <span className="font-semibold">{plan.ram} RAM</span>
-                    <p className="text-sm text-muted-foreground">Memoria</p>
+                    <p className="text-sm text-muted-foreground">Memory DDR4</p>
                   </div>
                 </div>
 
@@ -196,7 +194,7 @@ export default function VdsPage() {
                   <div>
                     <span className="font-semibold">{plan.storage}</span>
                     <p className="text-sm text-muted-foreground">
-                      Almacenamiento
+                      Storage NVMe or SSD
                     </p>
                   </div>
                 </div>
@@ -208,7 +206,7 @@ export default function VdsPage() {
                       {plan.snapshots} Snapshot{plan.snapshots > 1 ? "s" : ""}
                     </span>
                     <p className="text-sm text-muted-foreground">
-                      Copias de seguridad
+                      Backup copies
                     </p>
                   </div>
                 </div>
@@ -218,7 +216,7 @@ export default function VdsPage() {
                   <div>
                     <span className="font-semibold">{plan.ddos}</span>
                     <p className="text-sm text-muted-foreground">
-                      Protección incluida
+                      Protection included
                     </p>
                   </div>
                 </div>
@@ -228,7 +226,7 @@ export default function VdsPage() {
                   <div>
                     <span className="font-semibold">{plan.port}</span>
                     <p className="text-sm text-muted-foreground">
-                      Velocidad de transferencia
+                      Transfer speed
                     </p>
                   </div>
                 </div>
@@ -237,15 +235,15 @@ export default function VdsPage() {
                   <Globe className="size-5 text-blue-500" />
                   <div>
                     <span className="font-semibold">{plan.traffic}</span>
-                    <p className="text-sm text-muted-foreground">Tráfico</p>
+                    <p className="text-sm text-muted-foreground">Traffic</p>
                   </div>
                 </div>
 
                 <div className="flex items-center gap-3">
                   <Clock className="size-5 text-blue-500" />
                   <div>
-                    <span className="font-semibold">Soporte</span>
-                    <p className="text-sm text-muted-foreground">Rapido 24/7</p>
+                    <span className="font-semibold">Support</span>
+                    <p className="text-sm text-muted-foreground">Fast 24/7</p>
                   </div>
                 </div>
               </CardContent>
@@ -263,7 +261,7 @@ export default function VdsPage() {
                 >
                   <Link href="https://discord.gg/BwBjEEDzrR" target="_blank">
                     <Server className="mr-2 h-4 w-4" />
-                    Contratar Plan
+                    Order now
                   </Link>
                 </Button>
               </CardFooter>

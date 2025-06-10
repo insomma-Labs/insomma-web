@@ -63,37 +63,37 @@ export default function HomePage() {
               VPS Hosting Solutions
             </h4>
             <Badge className="text-xs bg-secondary/20 text-secondary border border-secondary/20 font-inter-sans xxs:text-sm">
-              ⚡ CPU de alto rendimiento (hasta 4.2 GHz+)
+              ⚡ High performance CPU (up to 4.2 GHz+)
             </Badge>
 
             <h1 className="text-3xl xxs:text-4xl md:text-5xl text-secondary font-semibold tracking-tighter text-balance leading-tight">
-              VPS en la nube confiable y rápido, diseñado para ti.
+              Reliable and fast cloud VPS, designed for you.
             </h1>
 
             <ul className="flex text-secondary flex-col gap-1.5 xxs:gap-2 font-inter-sans text-sm xxs:text-base">
               <li className="flex items-start xxs:items-center gap-2">
                 <CheckCircle className="size-4 mt-0.5 xxs:mt-0 flex-shrink-0" />
-                <span>Servicios VPS en la nube de alto rendimiento.</span>
+                <span>High-performance cloud VPS services.</span>
               </li>
 
               <li className="flex items-start xxs:items-center gap-2">
                 <CheckCircle className="size-4 mt-0.5 xxs:mt-0 flex-shrink-0" />
-                <span>Almacenamiento empresarial NVMe & SSD.</span>
+                <span>NVMe & SSD enterprise storage.</span>
               </li>
 
               <li className="flex items-start xxs:items-center gap-2">
                 <CheckCircle className="size-4 mt-0.5 xxs:mt-0 flex-shrink-0" />
-                <span>Conexiones de 10 Gbps.</span>
+                <span>10 Gbps connections.</span>
               </li>
             </ul>
 
             <Button
               size="lg"
               variant="outline"
-              className="w-full font-semibold tracking-tighter rounded-full uppercase font-inter-sans bg-secondary text-primary hover:scale-105 transition-transform duration-200 xxs:w-auto text-sm xs:text-base px-6"
+              className="w-full font-semibold font-inter-sans tracking-tighter rounded-full bg-secondary text-primary hover:scale-105 transition-transform duration-200 xxs:w-auto text-sm xs:text-base px-8"
               asChild
             >
-              <Link href="/vps">Ver VPS disponibles</Link>
+              <Link href="/vps">Start now</Link>
             </Button>
           </div>
         </div>
@@ -101,12 +101,10 @@ export default function HomePage() {
 
       <Container className="py-24 px-4 md:px-8 xl:px-40">
         <div className="mb-12 tracking-tighter">
-          <h2 className="text-4xl font-bold mb-1">
-            Elige el plan que necesites
-          </h2>
+          <h2 className="text-4xl font-bold mb-1">Choose the plan you need </h2>
           <p className="text-lg text-muted-foreground">
-            Nuestro equipo de ventas puede ayudarle a encontrar la solución que
-            mejor se adapte a sus necesidades.
+            Our sales team can help you find the solution that best suits your
+            needs. best suits your needs.
           </p>
         </div>
 
@@ -237,7 +235,7 @@ export default function HomePage() {
         <div className="">
           <div className="mb-12 tracking-tighter font-epilogue-sans flex flex-col justify-center md:flex-row md:justify-between items-center">
             <h2 className="text-[8vw] text-center xs:text-start xs:text-[5vw] text-secondary font-bold text-balance mb-4 md:mb-0 md:text-4xl">
-              Características totalmente gratis.
+              Totally free features.
             </h2>
             <Button
               variant="outline"
@@ -293,11 +291,11 @@ export default function HomePage() {
         <div>
           <div className="mb-12 tracking-tighter">
             <h2 className="text-4xl font-bold mb-1">
-              Más de 8 ubicaciones en todo el mundo
+              More than 8 locations worldwide
             </h2>
             <p className="text-lg text-muted-foreground">
-              Elija la ubicación que mejor se adapte a su negocio y obtenga un
-              VPS en la nube.
+              Choose the location that best suits your business and get a VPS in
+              the cloud.
             </p>
           </div>
 
@@ -312,7 +310,7 @@ export default function HomePage() {
                     : ""
                 }`}
               >
-                Europe VPS
+                Europe
               </Button>
               <Button
                 variant="outline"
@@ -321,7 +319,7 @@ export default function HomePage() {
                   activeTab === "usa" ? "bg-blue-600 text-white shadow-lg" : ""
                 }`}
               >
-                USA VPS
+                USA
               </Button>
               <Button
                 variant="outline"
@@ -330,7 +328,7 @@ export default function HomePage() {
                   activeTab === "asia" ? "bg-blue-600 text-white shadow-lg" : ""
                 }`}
               >
-                Asia VPS
+                Asia
               </Button>
               <Button
                 variant="outline"
@@ -346,7 +344,6 @@ export default function HomePage() {
             </div>
             <div className="grid lg:grid-cols-3 gap-8 items-stretch">
               <div className="lg:col-span-2">
-                {/* Locations Grid */}
                 <div className="bg-background h-full rounded-2xl p-4 shadow-lg border">
                   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     {locations[activeTab as keyof typeof locations].map(
@@ -371,13 +368,13 @@ export default function HomePage() {
                   Network Test
                 </h3>
                 <p className="text-slate-600 mb-6 leading-relaxed">
-                  Comprueba la velocidad de red de la ubicación que desea.
+                  Check the network speed of the desired location.{" "}
                 </p>
 
                 <div className="space-y-4">
                   <div>
                     <label className="block text-sm font-medium text-slate-700 mb-2">
-                      Elige ubicacion
+                      Select location
                     </label>
                     <Select
                       value={selectedLocation}
@@ -419,10 +416,12 @@ export default function HomePage() {
       <Container className="font-inter-sans bg-[#1433d6] py-24">
         <div className="text-secondary">
           <div className="mb-12 tracking-tighter">
-            <h2 className="text-4xl font-bold mb-1">Preguntas Frecuentes</h2>
+            <h2 className="text-4xl font-bold mb-1">
+              Frequently Asked Questions
+            </h2>
             <p className="text-lg text-zinc-300">
-              Resolvemos tus dudas sobre nuestros servicios de servidores VPS y
-              dedicados.
+              We solve your doubts about our VPS and dedicated servers services.
+              dedicated servers.
             </p>
           </div>
 
@@ -430,55 +429,55 @@ export default function HomePage() {
             <Accordion type="single" collapsible className="w-full">
               <AccordionItem value="item-1">
                 <AccordionTrigger className="text-base cursor-pointer">
-                  ¿Qué diferencia hay entre un VPS y un servidor dedicado?
+                  What is the difference between a VPS and a dedicated server?{" "}
                 </AccordionTrigger>
                 <AccordionContent className="text-base">
-                  Un VPS es un servidor virtual que comparte hardware físico con
-                  otros VPS, pero con recursos garantizados. Un servidor
-                  dedicado es un equipo físico completo exclusivo para ti,
-                  ofreciendo máximo rendimiento y control.
+                  A VPS is a virtual server that shares physical hardware with
+                  other VPSs, but with other VPS, but with guaranteed resources.
+                  A dedicated dedicated server is a complete physical equipment
+                  exclusively for you, offering maximum performance and control.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-2">
                 <AccordionTrigger className="text-base cursor-pointer">
-                  ¿Ofrecen registro de dominios?
+                  Do you offer domain registration?
                 </AccordionTrigger>
                 <AccordionContent className="text-base">
-                  No, nos especializamos exclusivamente en servidores VPS y
-                  dedicados. Para el registro de dominios, recomendamos utilizar
-                  un registrador especializado.
+                  No, we specialize exclusively in VPS and dedicated servers.
+                  dedicated servers. For domain registration, we recommend using
+                  a specialized registrar.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-3">
                 <AccordionTrigger className="text-base cursor-pointer">
-                  ¿Qué tipo de soporte técnico ofrecen?
+                  What kind of technical support do you offer?
                 </AccordionTrigger>
                 <AccordionContent className="text-base">
-                  Ofrecemos soporte técnico 24/7 para todos nuestros clientes.
-                  Puedes contactarnos a través de nuestro sistema de tickets o
-                  por Discord para resolver cualquier incidencia.
+                  We offer 24/7 technical support for all our customers. You can
+                  contact us through our ticketing system or via Discord to
+                  resolve Discord to resolve any issue.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-4">
                 <AccordionTrigger className="text-base cursor-pointer">
-                  ¿Cómo funciona la protección DDoS?
+                  How does DDoS protection work?
                 </AccordionTrigger>
                 <AccordionContent className="text-base">
-                  Todos nuestros servidores incluyen protección DDoS avanzada
-                  que filtra el tráfico malicioso antes de que llegue a tu
-                  servidor, manteniendo tu servicio siempre disponible incluso
-                  durante ataques.
+                  All our servers include advanced DDoS protection that filters
+                  malicious traffic before it reaches your server, keeping your
+                  service server, keeping your service always available even
+                  during attacks. during attacks.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-5">
                 <AccordionTrigger className="text-base cursor-pointer">
-                  ¿Puedo actualizar mi plan en el futuro?
+                  Can I upgrade my plan in the future?
                 </AccordionTrigger>
                 <AccordionContent className="text-base">
-                  Sí, puedes actualizar tu plan en cualquier momento para
-                  adaptarlo a tus necesidades. El proceso es sencillo y rápido,
-                  y nuestro equipo de soporte te ayudará en todo lo que
-                  necesites.
+                  Yes, you can upgrade your plan at any time to suit your needs.
+                  adapt it to your needs. The process is simple and fast, and
+                  our support team will help you with everything you need. you
+                  need.
                 </AccordionContent>
               </AccordionItem>
             </Accordion>

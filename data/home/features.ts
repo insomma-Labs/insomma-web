@@ -3,44 +3,41 @@ import { Cpu, Gauge, HardDrive, Server, Shield, Zap } from "lucide-react";
 export const features = [
   {
     icon: Cpu,
-    title: "Hardware potente",
+    title: "Powerful Hardware",
     description:
-      "Servidores con procesadores Intel/AMD, RAM DDR4 y almacenamiento NVMe.",
+      "Servers with Intel/AMD processors, DDR4 RAM and NVMe storage.",
     gradient: "from-blue-500 to-cyan-500",
   },
   {
     icon: Zap,
-    title: "Webs de alta velocidad",
-    description:
-      "Conectividad rápida con puertos de 1 Gbps, transferencia alta.",
+    title: "High Speed Webs",
+    description: "Fast connectivity with 1 Gbps ports, high transfer.",
     gradient: "from-purple-500 to-pink-500",
   },
   {
     icon: Shield,
-    title: "Seguridad y protección",
+    title: "Safety and security",
     description:
-      "Protección DDoS, opciones de seguridad y configuraciones RAID disponibles.",
+      "DDoS protection, security options and RAID configurations available.",
     gradient: "from-green-500 to-emerald-500",
   },
   {
     icon: Gauge,
-    title: "Fiabilidad cómoda",
-    description:
-      "99.9% de disponibilidad y centro de datos Tier 3 veloz y fiable.",
+    title: "Comfortable reliability",
+    description: "99.9% availability and fast and reliable Tier 3 data center.",
     gradient: "from-orange-500 to-red-500",
   },
   {
     icon: Server,
-    title: "Recursos dedicados",
+    title: "Dedicated resources",
     description:
-      "Recursos dedicados completos sin compartir. Rendimiento garantizado.",
+      "Full dedicated resources without sharing. Guaranteed performance.",
     gradient: "from-indigo-500 to-blue-500",
   },
   {
     icon: HardDrive,
-    title: "Almacenamiento NVMe SSD",
-    description:
-      "Almacenamiento NVMe y SSD ultrarrápido para acceso veloz a datos.",
+    title: "NVMe SSD storage",
+    description: "Ultra-fast NVMe and SSD storage for fast data access.",
     gradient: "from-teal-500 to-cyan-500",
   },
 ];
