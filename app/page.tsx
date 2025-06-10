@@ -50,7 +50,7 @@ export default function HomePage() {
   };
 
   const [activeTab, setActiveTab] = useState("europe");
-  const [selectedLocation, setSelectedLocation] = useState("Union Europea");
+  const [selectedLocation, setSelectedLocation] = useState("European Union");
 
   return (
     <>
@@ -58,19 +58,19 @@ export default function HomePage() {
 
       <Container className="py-16 xxs:py-24 md:py-36 bg-[#1433d6]">
         <div>
-          <div className="max-w-3xl space-y-4 xxs:space-y-6">
+          <div className="max-w-3xl space-y-4 font-inter-sans xxs:space-y-6">
             <h4 className="font-inter-sans text-secondary font-semibold text-sm xxs:text-base">
               VPS Hosting Solutions
             </h4>
-            <Badge className="text-xs bg-secondary/20 text-secondary border border-secondary/20 font-inter-sans xxs:text-sm">
+            <Badge className="text-xs bg-secondary/20 text-secondary border border-secondary/20 xxs:text-sm">
               ⚡ High performance CPU (up to 4.2 GHz+)
             </Badge>
 
-            <h1 className="text-3xl xxs:text-4xl md:text-5xl text-secondary font-semibold tracking-tighter text-balance leading-tight">
+            <h1 className="text-3xl text-secondary font-semibold tracking-tighter text-balance leading-tight xxs:text-4xl md:text-5xl">
               Reliable and fast cloud VPS, designed for you.
             </h1>
 
-            <ul className="flex text-secondary flex-col gap-1.5 xxs:gap-2 font-inter-sans text-sm xxs:text-base">
+            <ul className="flex text-secondary flex-col gap-1.5 xxs:gap-2 text-sm xxs:text-base">
               <li className="flex items-start xxs:items-center gap-2">
                 <CheckCircle className="size-4 mt-0.5 xxs:mt-0 flex-shrink-0" />
                 <span>High-performance cloud VPS services.</span>
@@ -90,7 +90,7 @@ export default function HomePage() {
             <Button
               size="lg"
               variant="outline"
-              className="w-full font-semibold font-inter-sans tracking-tighter rounded-full bg-secondary text-primary hover:scale-105 transition-transform duration-200 xxs:w-auto text-sm xs:text-base px-8"
+              className="w-full font-semibold tracking-tighter rounded-full bg-secondary text-primary hover:scale-105 transition-transform duration-200 xxs:w-auto text-sm xs:text-base px-8"
               asChild
             >
               <Link href="/vps">Start now</Link>
@@ -100,9 +100,11 @@ export default function HomePage() {
       </Container>
 
       <Container className="py-24 px-4 md:px-8 xl:px-40">
-        <div className="mb-12 tracking-tighter">
-          <h2 className="text-4xl font-bold mb-1">Choose the plan you need </h2>
-          <p className="text-lg text-muted-foreground">
+        <div className="mb-12">
+          <h2 className="text-4xl tracking-tighter font-bold mb-1">
+            Choose the plan you need
+          </h2>
+          <p className="text-lg tracking-tighter text-muted-foreground">
             Our sales team can help you find the solution that best suits your
             needs. best suits your needs.
           </p>
@@ -314,12 +316,12 @@ export default function HomePage() {
               </Button>
               <Button
                 variant="outline"
-                onClick={() => setActiveTab("usa")}
+                onClick={() => setActiveTab("us")}
                 className={`h-14 px-8 font-semibold text-lg transition-all duration-200 hover:bg-blue-600 hover:text-white cursor-pointer ${
-                  activeTab === "usa" ? "bg-blue-600 text-white shadow-lg" : ""
+                  activeTab === "us" ? "bg-blue-600 text-white shadow-lg" : ""
                 }`}
               >
-                USA
+                US
               </Button>
               <Button
                 variant="outline"
@@ -413,13 +415,13 @@ export default function HomePage() {
         </div>
       </Container>
 
-      <Container className="font-inter-sans bg-[#1433d6] py-24">
-        <div className="text-secondary">
-          <div className="mb-12 tracking-tighter">
+      <Container className="font-inter-sans text-muted-foreground py-24">
+        <div>
+          <div className="text-foreground mb-12 tracking-tighter">
             <h2 className="text-4xl font-bold mb-1">
               Frequently Asked Questions
             </h2>
-            <p className="text-lg text-zinc-300">
+            <p className="text-lg">
               We solve your doubts about our VPS and dedicated servers services.
               dedicated servers.
             </p>
@@ -428,7 +430,7 @@ export default function HomePage() {
           <div>
             <Accordion type="single" collapsible className="w-full">
               <AccordionItem value="item-1">
-                <AccordionTrigger className="text-base cursor-pointer">
+                <AccordionTrigger className="text-base text-foreground cursor-pointer">
                   What is the difference between a VPS and a dedicated server?{" "}
                 </AccordionTrigger>
                 <AccordionContent className="text-base">
@@ -439,7 +441,7 @@ export default function HomePage() {
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-2">
-                <AccordionTrigger className="text-base cursor-pointer">
+                <AccordionTrigger className="text-base text-foreground cursor-pointer">
                   Do you offer domain registration?
                 </AccordionTrigger>
                 <AccordionContent className="text-base">
@@ -449,7 +451,7 @@ export default function HomePage() {
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-3">
-                <AccordionTrigger className="text-base cursor-pointer">
+                <AccordionTrigger className="text-base text-foreground cursor-pointer">
                   What kind of technical support do you offer?
                 </AccordionTrigger>
                 <AccordionContent className="text-base">
@@ -459,7 +461,7 @@ export default function HomePage() {
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-4">
-                <AccordionTrigger className="text-base cursor-pointer">
+                <AccordionTrigger className="text-base text-foreground cursor-pointer">
                   How does DDoS protection work?
                 </AccordionTrigger>
                 <AccordionContent className="text-base">
@@ -470,7 +472,7 @@ export default function HomePage() {
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-5">
-                <AccordionTrigger className="text-base cursor-pointer">
+                <AccordionTrigger className="text-base text-foreground cursor-pointer">
                   Can I upgrade my plan in the future?
                 </AccordionTrigger>
                 <AccordionContent className="text-base">

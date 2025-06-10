@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import { Geist, Inter, Epilogue } from "next/font/google";
+import { Geist, Inter, Epilogue, Lexend } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Footer from "@/components/footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const lexendSans = Lexend({
+  variable: "--font-lexend-sans",
   subsets: ["latin"],
 });
 
@@ -73,7 +73,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="light" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${epilogueSans.variable} ${interSans.variable} font-epilogue-sans antialiased`}
+        className={`${lexendSans.variable} ${epilogueSans.variable} ${interSans.variable} font-epilogue-sans antialiased`}
       >
         <TooltipProvider>
           {children}

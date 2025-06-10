@@ -10,7 +10,7 @@ function Container({
     <section
       data-slot="section"
       className={cn(
-        "w-full h-auto py-12 px-4 md:px-8 xl:px-40",
+        "w-full h-auto py-12 px-4 md:px-8 xl:px-40 2xl:px-80",
 
         className
       )}

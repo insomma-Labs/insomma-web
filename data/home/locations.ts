@@ -3,7 +3,7 @@ export const locations = {
     { name: "European Union", flag: "🇪🇺" },
     { name: "United Kingdom", flag: "🇬🇧" },
   ],
-  usa: [
+  us: [
     { name: "United States (Central)", flag: "🇺🇸" },
     { name: "United States (East)", flag: "🇺🇸" },
     { name: "United States (West)", flag: "🇺🇸" },

@@ -76,6 +76,10 @@ export const navigationItems: NavItem[] = [
     ],
   },
   {
+    label: "Pricing",
+    href: "/pricing",
+  },
+  {
     label: "Blog",
     href: "/blog",
   },

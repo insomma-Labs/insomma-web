@@ -7,16 +7,16 @@ export default function NotFound() {
       <Header />
 
       <Container className="w-full py-60 flex justify-center items-center">
-        <div className="flex flex-col justify-center items-center gap-4">
+        <main className="flex flex-col justify-center items-center gap-4 text-center">
           <img
             src="https://cdn-icons-png.flaticon.com/512/10295/10295958.png"
-            alt=""
+            alt="Under Construction Icon"
             className="size-44"
           />
-          <h4 className="text-2xl font-bold font-inter-sans tracking-tighter">
-            Pagina en construccion, vuelve pronto^^
-          </h4>
-        </div>
+          <h1 className="text-2xl font-bold font-inter-sans tracking-tighter">
+            Page under construction. Please check back soon!
+          </h1>
+        </main>
       </Container>
     </>
   );
