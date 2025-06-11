@@ -303,26 +303,43 @@ export default function HomePage() {
 
           <div>
             <div className="flex flex-wrap gap-4 mb-4">
-              <Button
-                variant="outline"
-                onClick={() => setActiveTab("europe")}
-                className={`h-14 px-8 font-semibold text-lg transition-all duration-200 hover:bg-blue-600 hover:text-white cursor-pointer ${
-                  activeTab === "europe"
-                    ? "bg-blue-600 text-white shadow-lg"
-                    : ""
-                }`}
-              >
-                Europe
-              </Button>
-              <Button
-                variant="outline"
-                onClick={() => setActiveTab("us")}
-                className={`h-14 px-8 font-semibold text-lg transition-all duration-200 hover:bg-blue-600 hover:text-white cursor-pointer ${
-                  activeTab === "us" ? "bg-blue-600 text-white shadow-lg" : ""
-                }`}
-              >
-                US
-              </Button>
+              <div className="relative">
+                <Button
+                  variant="outline"
+                  onClick={() => setActiveTab("europe")}
+                  className={`h-14 px-8 font-semibold text-lg transition-all duration-200 hover:bg-blue-600 hover:text-white cursor-pointer ${
+                    activeTab === "europe"
+                      ? "bg-blue-600 text-white shadow-lg"
+                      : ""
+                  }`}
+                >
+                  Europe
+                </Button>
+                <Badge
+                  variant="destructive"
+                  className="absolute font-inter-sans -top-2 -right-2 px-2 py-1 text-xs font-bold bg-red-500 text-white"
+                >
+                  NEW
+                </Badge>
+              </div>
+
+              <div className="relative">
+                <Button
+                  variant="outline"
+                  onClick={() => setActiveTab("us")}
+                  className={`h-14 px-8 font-semibold text-lg transition-all duration-200 hover:bg-blue-600 hover:text-white cursor-pointer ${
+                    activeTab === "us" ? "bg-blue-600 text-white shadow-lg" : ""
+                  }`}
+                >
+                  US
+                </Button>
+                <Badge
+                  variant="destructive"
+                  className="absolute font-inter-sans -top-2 -right-2 px-2 py-1 text-xs font-bold bg-red-500 text-white"
+                >
+                  NEW
+                </Badge>
+              </div>
               <Button
                 variant="outline"
                 onClick={() => setActiveTab("asia")}

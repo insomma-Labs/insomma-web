@@ -7,6 +7,7 @@ import {
 } from "@/components/ui/accordion";
 
 import { vdsPlans } from "@/data/vps/vds.plans";
+import Link from "next/link";
 
 export default function VdsPricing() {
   return (
@@ -22,7 +23,7 @@ export default function VdsPricing() {
       </header>
 
       {/* Desktop Table */}
-      <div className="hidden md:block overflow-x-auto">
+      <div className="hidden lg:block overflow-x-auto">
         <table className="w-full">
           <thead>
             <tr className="border-b border-gray-200">
@@ -76,8 +77,11 @@ export default function VdsPricing() {
                   <Button
                     variant="outline"
                     className="hover:bg-blue-700 hover:text-white cursor-pointer"
+                    asChild
                   >
-                    Select
+                    <Link href="https://discord.gg/BwBjEEDzrR" target="_blank">
+                      Order plan
+                    </Link>
                   </Button>
                 </td>
               </tr>
@@ -87,7 +91,7 @@ export default function VdsPricing() {
       </div>
 
       {/* Mobile Accordion */}
-      <div className="md:hidden">
+      <div className="lg:hidden">
         <Accordion type="single" collapsible className="w-full">
           {vdsPlans.map((plan) => (
             <AccordionItem
@@ -148,8 +152,16 @@ export default function VdsPricing() {
                     <p className="text-xs text-gray-500 mb-3">
                       including 22% VAT
                     </p>
-                    <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white">
-                      Select {plan.name}
+                    <Button
+                      className="w-full bg-blue-600 hover:bg-blue-700 text-white"
+                      asChild
+                    >
+                      <Link
+                        href="https://discord.gg/BwBjEEDzrR"
+                        target="_blank"
+                      >
+                        Order plan
+                      </Link>
                     </Button>
                   </footer>
                 </article>

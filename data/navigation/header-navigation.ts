@@ -80,8 +80,8 @@ export const navigationItems: NavItem[] = [
     href: "/pricing",
   },
   {
-    label: "Blog",
-    href: "/blog",
+    label: "News",
+    href: "/news",
   },
 ];
 

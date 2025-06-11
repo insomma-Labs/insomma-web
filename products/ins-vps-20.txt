@@ -1,0 +1,16 @@
+curl -H "Content-Type: application/json" -X POST \
+-d '{
+  "username": "Insomma Cloud",
+  "avatar_url": "https://media.discordapp.net/attachments/1379939612524285992/1381845258433990777/360_F_353075213_Zb3jileFxv9yVILP7Hg2yDjxqHgD9vGZ.webp?ex=6849a7ef&is=6848566f&hm=b5b363df64f72c43c8badae6dee07a5f92c8f1f56911f40dd8ec3134fc8fdd37&=&format=webp&width=726&height=720",
+  "content": "@everyone",
+  "embeds": [
+    {
+      "title": "🔥 Oferta especial: Ins VPS 30",
+      "description": "💡 Ins VPS 30\n¡Potencia flexible y alcance global!\n\nIdeal para desarrolladores, agencias y proyectos que requieren rendimiento sólido y buena conectividad.\n\n💸 Precio\n~~€33.33~~ ➜ **€23.10** / mes\n\n⚙️ Recursos\nvCPU: 8 núcleos\nRAM: 24 GB DDR4\nTráfico: 32 TB\n\n💾 Almacenamiento incluido (gratis)\n• 200 GB NVMe\n• 400 GB SSD\n\n📦 Almacenamiento adicional (coste)\n➡️ 400 GB NVMe\n➡️ 800 GB SSD\n\n📸 Snapshots\n3 incluidos\n\n🌍 Regiones disponibles\n🇪🇺 Unión Europea\n🇬🇧 Reino Unido\n🇺🇸 EE.UU\n🇯🇵 Asia (Japón)\n🇦🇺 Australia (Sydney)\n\n🛡️ Protección DDoS\nIncluida sin coste adicional\n\nInsomma Cloud © 2025 • 8/6/25, 3:45",
+      "color": 16711680,
+      "thumbnail": {
+        "url": "https://media.discordapp.net/attachments/1379939612524285992/1381845258433990777/360_F_353075213_Zb3jileFxv9yVILP7Hg2yDjxqHgD9vGZ.webp?ex=6849a7ef&is=6848566f&hm=b5b363df64f72c43c8badae6dee07a5f92c8f1f56911f40dd8ec3134fc8fdd37&=&format=webp&width=726&height=720"
+      }
+    }
+  ]
+}' https://discord.com/api/webhooks/1380735667062968350/2wOVqFPM3A25j9JUzi3uQPaNxAPljzUyw59Eja0GQpw3rbZ_sQ-3SbB8HPnI7C2R4Ox2

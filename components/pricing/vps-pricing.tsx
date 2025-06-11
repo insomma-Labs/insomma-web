@@ -6,6 +6,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { vpsPlans } from "@/data/vps/vps-plans";
+import Link from "next/link";
 
 export default function VpsPricing() {
   return (
@@ -21,7 +22,7 @@ export default function VpsPricing() {
       </div>
 
       {/* Desktop Table */}
-      <div className="hidden md:block overflow-x-auto">
+      <div className="hidden lg:block overflow-x-auto">
         <table className="w-full">
           <thead>
             <tr className="border-b border-gray-200">
@@ -81,8 +82,11 @@ export default function VpsPricing() {
                   <Button
                     variant="outline"
                     className="hover:bg-blue-700 hover:text-white cursor-pointer"
+                    asChild
                   >
-                    Select
+                    <Link href="https://discord.gg/BwBjEEDzrR" target="_blank">
+                      Order plan
+                    </Link>
                   </Button>
                 </td>
               </tr>
@@ -92,7 +96,7 @@ export default function VpsPricing() {
       </div>
 
       {/* Mobile Accordion */}
-      <div className="md:hidden">
+      <div className="lg:hidden">
         <Accordion type="single" collapsible className="w-full">
           {vpsPlans.map((plan) => (
             <AccordionItem
@@ -155,8 +159,16 @@ export default function VpsPricing() {
                     <div className="text-xs text-gray-500 mb-3">
                       including 22% VAT
                     </div>
-                    <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white">
-                      Order plan
+                    <Button
+                      className="w-full bg-blue-600 hover:bg-blue-700 text-white"
+                      asChild
+                    >
+                      <Link
+                        href="https://discord.gg/BwBjEEDzrR"
+                        target="_blank"
+                      >
+                        Order plan
+                      </Link>
                     </Button>
                   </div>
                 </div>

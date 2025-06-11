@@ -33,15 +33,15 @@ export default function Header() {
       <header className="border-b sticky top-0 left-0 z-50">
         <div className="hidden h-8 bg-[#1433d6] font-inter-sans xxs:flex justify-between items-center px-4 md:px-8 xl:px-40 2xl:px-80">
           <h4 className="text-sm text-primary-foreground font-medium hover:underline">
-            🚀 Visit our discord and join the community.
+            Visit our discord and join the community 🚀
           </h4>
 
           <ul className="hidden md:flex items-center gap-4">
             <Link
-              href="/docs"
+              href="/blog"
               className="text-primary-foreground font-medium text-sm hover:underline"
             >
-              Docs
+              Blog
             </Link>
             <Link
               href="https://discord.gg/BwBjEEDzrR"
